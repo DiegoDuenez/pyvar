@@ -1,38 +1,37 @@
 # pyvar
 
-Python library to check the value of a variable.
+Libreria de Python para checar el tipo de dato de una variable.
 
-This library is based on functions that will detect the value they receive and return a true or false depending on whether the expected value is correct.
+Esta libreria esta basada en funciones que pueden detectar el valor que reciben y retornar un valor booleano (true o false) dependiendo si el valor/variable dado cumple con la condición.
 
-## Installation 🛠
+## Instalación 🛠
 
 ```
 git clone https://github.com/DiegoDuenez/pyvar.git
 ```
 
-## Import 📦
+## Importación 📦
 
-Import the file in your python code
+Importa el archivo en tu codigo de Python
 
 <pre>import pyvar</pre>
 
-## Getting Started 🚀
+## Empezando 🚀
 
-Below, you will see an example of the use of this library.
+A continuación se veran ejemplos del uso de esta libreria.
 
-### Functions
+### Funciones
 
-### How do they work? 
+### ¿Cómo trabajan?
+Todas las funciones (hasta ahora) trabajan en base a dos parametros.
 
-All functions (so far) are made up of two parameters.
+El primer parametro es el **valor** y el segundo es el **mensaje** (opcional).
 
-The first parameter is the **value** and the second is the **warning** (optional).
+**valor** es la la variable o el valor que pasamos a la funcion para identificar su tipo de dato.
 
-**value** is the variable or value that will be passed to the function to identify its data type.
+**mensaje** es un parametro booleano opcional, por defecto su valor es verdadero y no es necesario de especificarlo cuando intanciamos la función.
 
-**warning** is an optional Boolean parameter, by default its value is true and it is not necessary to specify it when instantiating the function.
-
-Unnecessary way:
+Forma innecesaria:
 
 ```
 
@@ -42,7 +41,7 @@ pyvar.isInt(5, True) ❌
 
 ```
 
-What this parameter allows is that when it is true, a message will appear in the console like this:
+Lo que permite este parámetro es que cuando sea verdadero, aparecerá un mensaje en la consola como este:
 
 ```
 
@@ -58,11 +57,11 @@ pyvar.isInt(v)
 
 ```
 
-To prevent these messages from getting out, all you have to do is put **warning** as False and the function will continue to work the same but nothing will appear on the console.
+Para evitar que estos mensajes salgan, todo lo que tiene que hacer es poner ** mensaje ** como Falso y la función seguirá funcionando igual pero no aparecerá nada en la consola.
 
 isInt()
 
-- This function checks if the given value is an Integer.
+- Esta función comprueba si el valor dado es un número entero.
 
 
 ```
@@ -75,7 +74,7 @@ pyvar.isInt(v)
 
 isFloat()
 
-- This function checks if the given values is a Float. 
+- Esta función comprueba si los valores dados son flotantes.
 
 ```
 
@@ -88,7 +87,7 @@ pyvar.isFloat(v)
 
 isString()
 
-- This function checks if the given values is an String.
+- Esta función comprueba si los valores dados son una cadena.
 
 ```
 
@@ -100,7 +99,7 @@ pyvar.isString(v)
 
 isBool()
 
-- This function checks if the given values is a Boolean.
+- Esta función comprueba si los valores dados son booleanos.
 
 ```
 
@@ -112,7 +111,7 @@ pyvar.isBool(v)
 
 isNumericBool()
 
-- This function checks if the given values is a Numeric boolean (0 or 1)
+- Esta función comprueba si los valores dados son un booleano numérico (0 o 1)
 
 ```
 
@@ -124,7 +123,7 @@ pyvar.isBool(v)
 
 isList()
 
-- This function checks if the given values is a List.
+- Esta función comprueba si los valores dados son una lista.
 
 ```
 
@@ -136,7 +135,7 @@ pyvar.isList(v)
 
 isTuple()
 
-- This function checks if the given values is a Tuple.
+- Esta función comprueba si los valores dados son una tupla.
 
 ```
 
@@ -148,7 +147,7 @@ pyvar.isTuple(v)
 
 isDict()
 
-- This function checks if the given values is a Dictionary.
+- Esta función comprueba si los valores dados son un diccionario.
 
 ```
 
@@ -160,7 +159,7 @@ pyvar.isDict(v)
 
 isComplex()
 
-- This function checks if the given values is a Complex.
+- Esta función comprueba si los valores dados son complex.
 
 ```
 
@@ -170,9 +169,9 @@ pyvar.isComplex(v)
 
 ```
 
-### With conditionals (Example)
+### Con condicionales (Ejemplo)
 
-You can put the functions with conditionals like this:
+Puedes poner las funciones con condicionales como este:
 
 ```
 
@@ -182,7 +181,7 @@ if pyvar.isInt(v):
   print("Yes, this value is an Integer")
 
 ```
-Return (if the conditional is True):
+Retorno (si la condicional es verdadera):
 
 ```
 
@@ -190,7 +189,7 @@ Yes, this value is an Integer
 
 ```
 
-_if the values is different than Int_:
+_si los valores son diferentes a Int_:
 
 ```
 
@@ -201,7 +200,7 @@ if pyvar.isInt(v):
 
 ```
 
-Return:
+Retorno:
 
 ```
 
