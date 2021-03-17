@@ -12,7 +12,7 @@ git clone https://github.com/DiegoDuenez/pyvar.git
 
 ## Importación 📦
 
-Importa el archivo en tu codigo de Python
+Importa el archivo en tu codigo de Python.
 
 <pre>import pyvar</pre>
 
@@ -22,7 +22,7 @@ A continuación se veran ejemplos del uso de esta libreria.
 
 ### Funciones
 
-### ¿Cómo trabajan?
+### ¿Cómo funcionan?
 Todas las funciones (hasta ahora) trabajan en base a dos parametros.
 
 El primer parametro es el **valor** y el segundo es el **mensaje** (opcional).
