@@ -1,8 +1,8 @@
 # pyvar
 
-Libreria de Python para checar el tipo de dato de una variable.
+Checa el tipo de dato de una variable.
 
-Esta libreria esta basada en funciones que pueden detectar el valor que reciben y retornar un valor booleano (true o false) dependiendo si el valor/variable dado cumple con la condición.
+Esta basado en funciones que pueden detectar el valor que reciben y retornar un valor booleano (true o false) dependiendo si el valor/variable dado cumple con la condición.
 
 ## Instalación 🛠
 
